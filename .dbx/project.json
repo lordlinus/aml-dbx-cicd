@@ -1,0 +1,9 @@
+{
+  "environments": {
+    "default": {
+      "profile": "DEFAULT",
+      "workspace_dir": "/Shared/dbx/aml_dbx_cicd",
+      "artifact_location": "dbfs:/Shared/dbx/projects/aml_dbx_cicd"
+    }
+  }
+}
