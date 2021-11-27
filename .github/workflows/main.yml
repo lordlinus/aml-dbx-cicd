@@ -38,3 +38,6 @@ jobs:
       # Install Databricks CLI
       - name: install-databricks-cli
         uses: microsoft/install-databricks-cli@v1.0.0
+        run: |
+          dbx execute --cluster-name=cluster-01 --job=sample_task_1
+
