@@ -41,5 +41,6 @@ jobs:
       
       - name: Run databricks job
         run: |
+          pip install dbx
           dbx execute --cluster-name=cluster-01 --job=sample_task_1
 
