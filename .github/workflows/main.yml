@@ -51,5 +51,6 @@ jobs:
       
       - name: configure-dbx-and-run
         run: |
+          dbx configure
           dbx execute --cluster-name=cluster-01 --job=sample_task_1
 
