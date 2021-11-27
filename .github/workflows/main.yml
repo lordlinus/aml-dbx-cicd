@@ -22,8 +22,8 @@ jobs:
     
     # specify the environment variables
     env:
-      DATABRICKS_HOST: ${{{{ secrets.DATABRICKS_HOST }}}}
-      DATABRICKS_TOKEN:  ${{{{ secrets.DATABRICKS_TOKEN }}}}
+      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+      DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
