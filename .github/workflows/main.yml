@@ -48,4 +48,10 @@ jobs:
             
       - name: dbx-execute
         run: |
-          dbx execute --cluster-name=cluster-01 --job=sample_task_1 --no-rebuild
+          databricks jobs list
+
+      - name: Connect/Create Azure Machine Learning Workspace
+        id: aml_workspace
+        uses: Azure/aml-workspace@v1
+        with:
+            azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
